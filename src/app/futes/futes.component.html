@@ -1,0 +1,193 @@
+<app-root></app-root>
+    <h1 style="color:aliceblue;     margin-left:150px;">Fűtés és szellőztetés</h1>
+
+
+  <div class="container">
+
+
+</div>
+    <div class='spacer'>
+
+        <a class='wide blue' >
+            <div class="text">
+                <div >     <div style="margin-bottom:4px;" (click)="startLoading()">         <img src="https://cdn.xl.thumbs.canstockphoto.hu/magas-jelk%C3%A9p-h%C5%91m%C3%A9rs%C3%A9klet-icon-l%C3%A1zm%C3%A9r%C5%91-vektor-clipart_csp31904407.jpg" width="110px" height="130px" class="center">
+                   </div> <m4-spinner [(ngModel)]="itemsObject[0].nappali"  (click)="startLoading()" (ngModelChange)="setTemperature('nappali',itemsObject[0].nappali)" [min-value]="14" [max-value]="30" ></m4-spinner>
+
+                </div>
+              </div>
+        <div class="gombok">
+
+        </div>
+
+        <h2>Nappali fűtés</h2>
+        </a>
+        
+        <a href="javascript://" class='wide blue'>
+            <div class="text">
+                <div >     <div style="margin-bottom:4px;" (click)="startLoading()">         <img src="https://cdn.xl.thumbs.canstockphoto.hu/magas-jelk%C3%A9p-h%C5%91m%C3%A9rs%C3%A9klet-icon-l%C3%A1zm%C3%A9r%C5%91-vektor-clipart_csp31904407.jpg" width="110px" height="130px" class="center">
+                   </div> <m4-spinner [(ngModel)]="itemsObject[0].szoba_f"  (click)="startLoading()" (ngModelChange)="setTemperature('szoba_f',itemsObject[0].szoba_f)" [min-value]="14" [max-value]="30" ></m4-spinner>
+
+                </div>
+              </div>
+        <div class="gombok">
+
+        </div>
+
+        <h2>Szoba fűtés</h2>
+        </a>
+        <a href="javascript://" class='wide black'>
+            <div class="text">
+                <div >     <div style="margin-bottom:4px;" (click)="startLoading()">         <img src="https://firebasestorage.googleapis.com/v0/b/homeconsole-b0c4f.appspot.com/o/250-2504023_the-heating-ventilating-and-air-conditioning-system-clipart.png?alt=media&token=700aaadc-3df3-4d54-9fc1-2463235e8e31" width="110px" height="130px" class="center">
+                   </div> <m4-spinner [(ngModel)]="szelloObject[0].nappali"  (click)="startLoading()" (ngModelChange)="setVentillation('nappali',szelloObject[0].nappali)" [min-value]="0" [max-value]="5" ></m4-spinner>
+
+                </div>
+              </div>
+        <div class="gombok">
+
+        </div>
+
+        <h2>Nappali szellőztető</h2>
+            </a>
+            
+        <a href="javascript://" class='wide black'>
+            <div class="text">
+                <div >     <div style="margin-bottom:4px;" (click)="startLoading()">         <img src="https://firebasestorage.googleapis.com/v0/b/homeconsole-b0c4f.appspot.com/o/250-2504023_the-heating-ventilating-and-air-conditioning-system-clipart.png?alt=media&token=700aaadc-3df3-4d54-9fc1-2463235e8e31" width="110px" height="130px" class="center">
+                   </div> <m4-spinner [(ngModel)]="szelloObject[0].szoba_f"  (click)="startLoading()" (ngModelChange)="setVentillation('szoba_f',szelloObject[0].szoba_f)" [min-value]="0" [max-value]="5" ></m4-spinner>
+
+                </div>
+              </div>
+        <div class="gombok">
+
+        </div>
+
+        <h2>Szoba szellőztető</h2>
+        </a>
+
+        <a href="javascript://" class='wide blue'>
+            <div class="text">
+                <div *ngIf="itemsObject[0].padlo==true" (click)="turnOffPadlo()" ><img class="center" src="https://www.pinclipart.com/picdir/big/91-910595_in-floor-heating-floor-heating-icon-clipart.png" height="170" width="170"></div>
+                <div *ngIf="itemsObject[0].padlo==false" (click)="turnOnPadlo()"  ><img class="center" src="https://firebasestorage.googleapis.com/v0/b/homeconsole-b0c4f.appspot.com/o/padloheatoff.png?alt=media&token=9c994ceb-f468-4927-8cf0-638b4ac0c456" height="170" width="170"></div>   
+           
+              </div>
+        <div class="gombok">
+
+        </div>
+
+        <h2>Padlófűtés</h2>
+        </a>
+        <a class='wide blue' >
+            <div class="text">
+                <div >     <div style="margin-bottom:4px;" (click)="startLoading()">         <img src="https://cdn.xl.thumbs.canstockphoto.hu/magas-jelk%C3%A9p-h%C5%91m%C3%A9rs%C3%A9klet-icon-l%C3%A1zm%C3%A9r%C5%91-vektor-clipart_csp31904407.jpg" width="110px" height="130px" class="center">
+                   </div> <m4-spinner [(ngModel)]="itemsObject[0].nappali"  (click)="startLoading()" (ngModelChange)="setTemperatureAll(itemsObject[0].nappali)" [min-value]="14" [max-value]="30" ></m4-spinner>
+
+                </div>
+              </div>
+        <div class="gombok">
+
+        </div>
+
+        <h2>Összes szoba fűtés</h2>
+        </a>
+
+    </div>
+    
+
+    <div class='spacer spacer3x'>
+
+        <a href="javascript://" class='wide blue'>
+            <div class="text">
+                <div >     <div style="margin-bottom:4px;" (click)="startLoading()">         <img src="https://cdn.xl.thumbs.canstockphoto.hu/magas-jelk%C3%A9p-h%C5%91m%C3%A9rs%C3%A9klet-icon-l%C3%A1zm%C3%A9r%C5%91-vektor-clipart_csp31904407.jpg" width="110px" height="130px" class="center">
+                   </div> <m4-spinner [(ngModel)]="itemsObject[0].konyha"  (click)="startLoading()" (ngModelChange)="setTemperature('konyha',itemsObject[0].konyha)" [min-value]="14" [max-value]="30" ></m4-spinner>
+
+                </div>
+              </div>
+        <div class="gombok">
+
+        </div>
+
+        <h2>Konyha fűtés</h2>
+        </a>
+      
+        <a class='wide blue' >
+            <div class="text">
+                <div >     <div style="margin-bottom:4px;" (click)="startLoading()">         <img src="https://cdn.xl.thumbs.canstockphoto.hu/magas-jelk%C3%A9p-h%C5%91m%C3%A9rs%C3%A9klet-icon-l%C3%A1zm%C3%A9r%C5%91-vektor-clipart_csp31904407.jpg" width="110px" height="130px" class="center">
+                   </div> <m4-spinner [(ngModel)]="itemsObject[0].wc"  (click)="startLoading()" (ngModelChange)="setTemperature('wc',itemsObject[0].wc)" [min-value]="14" [max-value]="30" ></m4-spinner>
+
+                </div>
+              </div>
+        <div class="gombok">
+
+        </div>
+
+        <h2>Fürdőszoba fűtés</h2>
+    </a>
+        
+        <a href="javascript://" class='wide black'>
+            <div class="text">
+                <div >     <div style="margin-bottom:4px;" (click)="startLoading()">         <img src="https://firebasestorage.googleapis.com/v0/b/homeconsole-b0c4f.appspot.com/o/250-2504023_the-heating-ventilating-and-air-conditioning-system-clipart.png?alt=media&token=700aaadc-3df3-4d54-9fc1-2463235e8e31" width="110px" height="130px" class="center">
+                   </div> <m4-spinner [(ngModel)]="szelloObject[0].konyha"  (click)="startLoading()" (ngModelChange)="setVentillation('konyha',szelloObject[0].konyha)" [min-value]="0" [max-value]="5" ></m4-spinner>
+
+                </div>
+              </div>
+        <div class="gombok">
+
+        </div>
+
+        <h2>Konyha szellőztető</h2>
+        </a>
+   
+        <a href="javascript://" class='wide black'>
+            <div class="text">
+                <div >     <div style="margin-bottom:4px;" (click)="startLoading()">         <img src="https://firebasestorage.googleapis.com/v0/b/homeconsole-b0c4f.appspot.com/o/250-2504023_the-heating-ventilating-and-air-conditioning-system-clipart.png?alt=media&token=700aaadc-3df3-4d54-9fc1-2463235e8e31" width="110px" height="130px" class="center">
+                   </div> <m4-spinner [(ngModel)]="szelloObject[0].wc"  (click)="startLoading()" (ngModelChange)="setVentillation('wc',szelloObject[0].wc)" [min-value]="0" [max-value]="5" ></m4-spinner>
+
+                </div>
+              </div>
+        <div class="gombok">
+
+        </div>
+
+        <h2>Fürdőszoba szellőztető</h2>
+        </a>
+        <a href="javascript://" class='wide black'>
+            <div class="text">
+                <div >     <div style="margin-bottom:4px;" (click)="startLoading()">         <img src="https://firebasestorage.googleapis.com/v0/b/homeconsole-b0c4f.appspot.com/o/250-2504023_the-heating-ventilating-and-air-conditioning-system-clipart.png?alt=media&token=700aaadc-3df3-4d54-9fc1-2463235e8e31" width="110px" height="130px" class="center">
+                   </div> <m4-spinner [(ngModel)]="szelloObject[0].nappali"   (ngModelChange)="setVentillationAll(szelloObject[0].nappali)" [min-value]="0" [max-value]="5" ></m4-spinner>
+
+                </div>
+              </div>
+        <div class="gombok">
+
+        </div>
+
+        <h2>Összes szoba szellőztető</h2>
+            </a>
+            <a href="javascript://" class='wide blue'>
+                <div class="text">
+                    <div *ngIf="szelloObject[0].tisztito==true" (click)="turnOffTisztito()" ><img class="center" src="https://www.pinclipart.com/picdir/big/292-2920712_air-conditioning-cleaning-comments-clipart.png" height="170" width="170"></div>
+                    <div *ngIf="szelloObject[0].tisztito==false" (click)="turnOnTisztito()"  ><img class="center" src="https://firebasestorage.googleapis.com/v0/b/homeconsole-b0c4f.appspot.com/o/aircleanoff.png?alt=media&token=2e1b8df5-3d68-47c8-accf-9660fc0a8089" height="170" width="170"></div>   
+               
+                  </div>
+            <div class="gombok">
+    
+            </div>
+    
+            <h2>Légtisztító</h2>
+            </a>
+    
+    </div>
+
+
+        <a href="javascript://" class='box blue'>
+                    <h1 >{{kint}}°C</h1>
+            <h2>Kinti hőmérséklet</h2>
+        </a>
+        <a href="javascript://" class='box blue'>
+                    <h1>{{(itemsObject[0].nappali + itemsObject[0].wc + itemsObject[0].konyha + itemsObject[0].szoba_f)/4}}°C</h1>
+            <h2>Belső hőmérséklet</h2>
+        </a>
+
+
+
+
+  <router-outlet></router-outlet>
