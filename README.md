@@ -43,4 +43,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ![MAP](https://firebasestorage.googleapis.com/v0/b/rpggenerator-58459.appspot.com/o/4..png?alt=media&token=66355b08-07bf-4380-8c07-ffbcb2287f8c)
 
-
+## Firebase Connect
+ Copy and paster your secret config to `Src\environments\environment.ts` .
