@@ -1,3 +1,23 @@
+## Index page
+
+![MAP](https://firebasestorage.googleapis.com/v0/b/rpggenerator-58459.appspot.com/o/1..png?alt=media&token=6d6208c8-f598-4e61-b2f8-bdff7e6cfbb7)
+
+## Control Temperature
+
+![MAP](https://firebasestorage.googleapis.com/v0/b/rpggenerator-58459.appspot.com/o/2..png?alt=media&token=c9e1e74b-8431-405d-bfc1-36910e200801)
+
+## Control Garden ( Irrigation System, Lamps, Smart Lawn Mower)
+
+![MAP](https://firebasestorage.googleapis.com/v0/b/rpggenerator-58459.appspot.com/o/3..png?alt=media&token=0eb28406-1357-40a8-8956-c532c5ffd988)
+
+
+## Control Lamps
+
+![MAP](https://firebasestorage.googleapis.com/v0/b/rpggenerator-58459.appspot.com/o/4..png?alt=media&token=66355b08-07bf-4380-8c07-ffbcb2287f8c)
+
+## Firebase Connect
+ Copy and paster your secret config to `Src\environments\environment.ts` .
+
 # Home
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
@@ -26,22 +46,4 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-## Index page
 
-![MAP](https://firebasestorage.googleapis.com/v0/b/rpggenerator-58459.appspot.com/o/1..png?alt=media&token=6d6208c8-f598-4e61-b2f8-bdff7e6cfbb7)
-
-## Control Temperature
-
-![MAP](https://firebasestorage.googleapis.com/v0/b/rpggenerator-58459.appspot.com/o/2..png?alt=media&token=c9e1e74b-8431-405d-bfc1-36910e200801)
-
-## Control Garden ( Irrigation System, Lamps, Smart Lawn Mower)
-
-![MAP](https://firebasestorage.googleapis.com/v0/b/rpggenerator-58459.appspot.com/o/3..png?alt=media&token=0eb28406-1357-40a8-8956-c532c5ffd988)
-
-
-## Control Lamps
-
-![MAP](https://firebasestorage.googleapis.com/v0/b/rpggenerator-58459.appspot.com/o/4..png?alt=media&token=66355b08-07bf-4380-8c07-ffbcb2287f8c)
-
-## Firebase Connect
- Copy and paster your secret config to `Src\environments\environment.ts` .
