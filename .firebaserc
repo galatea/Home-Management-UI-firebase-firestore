@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "homeconsole-b0c4f"
+  },
+  "targets": {
+    "homeconsole-b0c4f": {
+      "hosting": {
+        "home": [
+          "homeconsole-b0c4f"
+        ]
+      }
+    }
+  }
+}
